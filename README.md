@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+Hướng dẫn sử dụng React với các package react-firebase/auth, react-dom, react-router-dom, firebase và bootstrap
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React là một thư viện JavaScript phổ biến cho phép bạn xây dựng các ứng dụng web động. Với React, bạn có thể tạo các thành phần độc lập và sử dụng chúng trong các ứng dụng của mình.
 
-## Available Scripts
+Trong hướng dẫn này, chúng ta sẽ tập trung vào cách sử dụng React với các package sau:
 
-In the project directory, you can run:
+`react-firebase/auth`: là một package giúp bạn đăng nhập và xác thực người dùng bằng Firebase.
+`react-dom`: là một package giúp hiển thị các thành phần React trên trình duyệt.
+`react-router-dom`: là một package giúp bạn quản lý định tuyến trong ứng dụng của mình.
+`firebase`: là một platform dịch vụ đám mây, cung cấp các dịch vụ cho phép lưu trữ dữ liệu, xác thực người dùng, phân tích, đăng nhập và đăng ký từ xa.
+`bootstrap`: là một framework CSS phổ biến giúp bạn thiết kế các giao diện web đẹp và đáp ứng.
+Bước 1: Tạo một ứng dụng React mới
 
-### `npm start`
+Để bắt đầu, bạn cần tạo một ứng dụng React mới. Bạn có thể làm điều này bằng cách sử dụng lệnh sau:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###  `npx create-react-app my-app`
+Trong đó "my-app" là tên của ứng dụng mới của bạn. Sau khi tạo xong, bạn có thể chạy ứng dụng của mình bằng lệnh:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###  `cd my-app`
+npm start
+Bước 2: Cài đặt các package cần thiết
 
-### `npm test`
+Để sử dụng các package đã nêu ở trên, bạn cần cài đặt chúng vào ứng dụng của mình. Bạn có thể làm điều này bằng cách sử dụng lệnh sau:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###    `npm install --save firebase react-firebase/auth react-router-dom bootstrap`
+Bước 3: Cấu hình Firebase
 
-### `npm run build`
+Bạn cần cấu hình Firebase cho ứng dụng của mình để sử dụng các tính năng xác thực người dùng. Để làm điều này, truy cập vào trang Firebase Console, đăng nhập vào tài khoản của mình và tạo một dự án mới.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Sau đó, bạn cần tạo một ứng dụng mới và lấy các thông tin cấu hình của nó, bao gồm cả "API Key", "Auth Domain", "Database URL", "Project ID", "Storage Bucket" và "Messaging Sender ID".
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Sau khi đã cài đặt các package cần thiết, để chạy ứng dụng React bằng lệnh npm start, bạn có thể thực hiện các bước sau:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Mở terminal hoặc command prompt và di chuyển đến thư mục chứa project của bạn.
 
-### `npm run eject`
+Chạy lệnh 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `npm start`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Đợi một vài giây để ứng dụng được khởi động và trình duyệt web của bạn sẽ tự động mở và hiển thị ứng dụng.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Lưu ý: Trong quá trình chạy ứng dụng, nếu bạn có thay đổi code, trình duyệt sẽ tự động reload lại trang để hiển thị các thay đổi đó.
