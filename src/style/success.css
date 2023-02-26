@@ -1,0 +1,11 @@
+.success__header {
+    margin-bottom: 20px;
+}
+.success__header span i{
+    font-size: 5rem;
+    color: var(--toastify-icon-color-success);
+}
+
+table tr td, table tr th {
+    width: 100px;
+}

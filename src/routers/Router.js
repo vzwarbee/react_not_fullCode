@@ -17,6 +17,7 @@ import Dashboard from "../admin/Dashboard"
 import Users from "../admin/Users"
 import LoginAdmin from "../admin/LoginAdmin"
 import ChoseYourPage from "../admin/ChoseYourPage"
+import Success from "../pages/Success"
 
 const Routers = () => {
     return <Routes>
@@ -33,9 +34,11 @@ const Routers = () => {
             <Route path="dashboard/users" element={<Users />} />
             <Route path="dashboard/order" element={<Order />} />
             <Route path="dashboard/add-product" element={<AddProducts />} />
+
         </Route>
 
         <Route path="admin" element={<LoginAdmin />} />
+        <Route path="/success" element={<Success />} />
         <Route path="chose-your-page" element={<ChoseYourPage />} />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />

@@ -6,7 +6,7 @@ const Dashboard = () => {
 
     const { data: products } = useGetData('products');
     const { data: users } = useGetData('users');
-    const { data: orders } = useGetData("orders")
+    const { data: orders } = useGetData("orders");
 
     return (
         <>
@@ -16,7 +16,7 @@ const Dashboard = () => {
                         <Col className='lg-3'>
                             <div className="revenua__box">
                                 <h5>Total Sales</h5>
-                                <span>0</span>
+                                <span>{orders.length}</span>
                             </div>
                         </Col>
                         <Col className='lg-3'>

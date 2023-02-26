@@ -17,7 +17,6 @@ import { doc, getDoc } from 'firebase/firestore'
 
 const ProductDetails = () => {
 
-    const [product, setProduct] = useState({})
 
     const [tab, setTab] = useState('desc');
     const [rating, setRating] = useState(null);
@@ -27,6 +26,7 @@ const ProductDetails = () => {
     const disPatch = useDispatch()
 
     const { id } = useParams()
+    const [product, setProduct] = useState({})
     const { data: products } = useGetData('products')
 
 

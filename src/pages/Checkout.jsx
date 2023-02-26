@@ -56,7 +56,7 @@ const Checkout = () => {
                 totalCost: addTotalCost(),
             });
             toast.success('Product successfully added!!!');
-            navigete("/shop")
+            navigete("/success")
         } catch (error) {
 
             toast.error('product not add !!')

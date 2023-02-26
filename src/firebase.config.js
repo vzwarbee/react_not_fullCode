@@ -18,7 +18,8 @@ const firebaseConfig = {
     messagingSenderId: "202742768399",
     appId: "1:202742768399:web:d3a8cbce7d6f56d8fcd47a"
 };
-
+//đoạn ở trên tạo một fire storage rồi lấy code api của hắn copy vào
+// đoạn dưới không cần sửa
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
