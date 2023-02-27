@@ -7,7 +7,10 @@
 td i {
     cursor: pointer;
 }
-
-td, th {
-    color: var(--primary-color);
+th {
+    color: #fff;
+    text-shadow: 0 0 10px var(--bs-green);
+}
+td {
+    color: #ffff;
 }

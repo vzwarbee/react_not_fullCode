@@ -4,7 +4,7 @@
 
 .checkout__cart {
     padding: 20px;
-    background: var(--primary-color);
+    background: var(--bs-green);
     color: #fff;
     border-radius: 5px;
 }
@@ -41,4 +41,16 @@ width: 100px;
 border: none;
 outline: none;
 padding-top: 20px;
+}
+
+.total__cost input::placeholder {
+    color: #fff;
+}
+
+.btn__order {
+    background: var(--bs-green) !important;
+    transition: background .25s;
+}
+.btn__order:hover {
+    background: var(--bs-primary) !important;
 }

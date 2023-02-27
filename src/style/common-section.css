@@ -1,8 +1,8 @@
 
 
 .common__section {
-    background: linear-gradient(rgba(0,0,0, 0.562), rgba(0,0,0, 0.562));
-    background-size: contain;
+    background: linear-gradient(rgba(0,0,0, 0.562), rgba(0,0,0, 0.562)), url('../assets/images/bg__shopcart.png') no-repeat center center;
+    background-size: cover;
     padding: 100px 0;
     display: flex;
     justify-content: center;

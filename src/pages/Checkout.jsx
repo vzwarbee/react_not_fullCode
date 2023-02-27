@@ -79,46 +79,48 @@ const Checkout = () => {
                         <Col lg='12'>
                             <h6 className="mb-4 fw-bold">Billing Information</h6>
 
-                            <Form className="billing__form" onSubmit={addProduct}>
-                                <Col lg='8'>
+                            <Form className="billing__form " onSubmit={addProduct}>
+                                <Row className="d-flex">
+                                    <Col lg='8'>
 
-                                    <FormGroup className="form__group">
-                                        <input type="text" placeholder={currentUser.displayName} value={enterDisplayName} onChange={(e) => {
-                                            setEnterDisplayName(e.target.value);
-                                        }} />
-                                    </FormGroup>
+                                        <FormGroup className="form__group">
+                                            <input type="text" placeholder={currentUser.displayName} value={enterDisplayName} onChange={(e) => {
+                                                setEnterDisplayName(e.target.value);
+                                            }} />
+                                        </FormGroup>
 
-                                    <FormGroup className="form__group">
-                                        <input type="text" placeholder="Enter your number phone..." value={enterNumberPhone} onChange={e => setEnterNumberPhone(e.target.value)} />
-                                    </FormGroup>
+                                        <FormGroup className="form__group">
+                                            <input type="text" placeholder="Enter your number phone..." value={enterNumberPhone} onChange={e => setEnterNumberPhone(e.target.value)} />
+                                        </FormGroup>
 
-                                    <FormGroup className="form__group">
-                                        <input type="text" placeholder="Enter your City..." value={enterCity} onChange={e => setEnterCity(e.target.value)} />
-                                    </FormGroup>
+                                        <FormGroup className="form__group">
+                                            <input type="text" placeholder="Enter your City..." value={enterCity} onChange={e => setEnterCity(e.target.value)} />
+                                        </FormGroup>
 
-                                    <FormGroup className="form__group">
-                                        <input type="text" placeholder="Enter your Post code..." value={enterPostcode} onChange={e => setEnterPostcode(e.target.value)} />
-                                    </FormGroup>
+                                        <FormGroup className="form__group">
+                                            <input type="text" placeholder="Enter your Post code..." value={enterPostcode} onChange={e => setEnterPostcode(e.target.value)} />
+                                        </FormGroup>
 
-                                    <FormGroup className="form__group">
-                                        <input type="text" placeholder="Enter your Country..." value={enterContry} onChange={e => setEnterContry(e.target.value)} />
-                                    </FormGroup>
-                                </Col>
+                                        <FormGroup className="form__group">
+                                            <input type="text" placeholder="Enter your Country..." value={enterContry} onChange={e => setEnterContry(e.target.value)} />
+                                        </FormGroup>
+                                    </Col>
 
-                                <Col lg='4'>
-                                    <div className="checkout__cart">
-                                        <h6>Total Qty: <span>{totalQty}</span></h6>
-                                        <h6>Subtotal: <span>{totalAmount}</span></h6>
-                                        <h6>Shipping:
-                                            <span>$5</span>
-                                        </h6>
-                                        <div className="total__cost">
-                                            <h4>Total Cost:</h4>
-                                            <input type="text" placeholder={`$ ${totalCost}`} value={enterTotalCost} readOnly onChange={e => setEnterTotalCost(e.target.value)} />
+                                    <Col lg='4'>
+                                        <div className="checkout__cart">
+                                            <h6>Total Qty: <span>{totalQty}</span></h6>
+                                            <h6>Subtotal: <span>{totalAmount}</span></h6>
+                                            <h6>Shipping:
+                                                <span>$5</span>
+                                            </h6>
+                                            <div className="total__cost">
+                                                <h4>Total Cost:</h4>
+                                                <input type="text" placeholder={`$ ${totalCost}`} value={enterTotalCost} readOnly onChange={e => setEnterTotalCost(e.target.value)} />
+                                            </div>
                                         </div>
-                                    </div>
-                                </Col>
-                                <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: .9 }} type="submit" className=" buy__btn">Submit Place an order</motion.button>
+                                    </Col>
+                                </Row>
+                                <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: .9 }} type="submit" className=" buy__btn btn__order">Submit Place an order</motion.button>
                             </Form>
                         </Col>
 

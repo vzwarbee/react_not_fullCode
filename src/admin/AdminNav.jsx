@@ -37,7 +37,7 @@ const AdminNav = () => {
                                 <Link to={'/home'}><h2>Multimart</h2></Link>
                             </div>
 
-                            <div className="search__box">
+                            <div className="search__box" id='search__box-admin'>
                                 <input type="text" placeholder='Search...' />
                                 <span><i className='ri-search-line'></i></span>
                             </div>

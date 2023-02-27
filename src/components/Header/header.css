@@ -21,10 +21,13 @@
     height: 1.5rem;
 }
 
+.sticky__header .logo h1 {
+    color: var(--bs-green);
+}
 .logo h1 {
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: #ffff;
 }
 
 .menu {
@@ -34,8 +37,11 @@
     margin-bottom: 0;
 }
 
+.sticky__header .nav__item a {
+    color: var(--bs-green);
+}
 .nav__item a {
-    color: var(--primary-color);
+    color: #ffff;
     font-weight: 500;
     cursor: pointer;
 }
@@ -46,9 +52,12 @@
     column-gap: 1.2rem;
 }
 
+.sticky__header .nav__icons span i {
+    color: var(--bs-green);
+}
 .nav__icons span i {
     font-size: 1.4rem;
-    color: var(--primary-color);
+    color: #ffff;
     cursor: pointer;
 }
 
@@ -63,8 +72,8 @@
     width: 15px;
     height:  15px;
     content: '';
-    background: var(--primary-color);
-    color: #fff;
+    background: #ffff;
+    color: var(--bs-danger);
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -119,8 +128,8 @@ color: coral;
 
 .mobile__menu {
     font-size: 1.3rem;
-    color: var(--primary-color);
-display: none;
+    color: #ffff;
+    display: none;
 }
 
 .nav__active {

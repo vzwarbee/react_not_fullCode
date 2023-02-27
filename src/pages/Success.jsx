@@ -24,7 +24,7 @@ const Success = () => {
 
             {
               loading ? <h3 className="fw-bold">Loading.........</h3> : orders.map((e) => (
-                <Table striped bordered hover size="sm">
+                <Table striped bordered hover size="sm" className='table__success'>
 
                   <thead>
                     <tr>
@@ -34,22 +34,22 @@ const Success = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td className='text-danger'>{e.displayName}</td>
-                      <td className='text-danger'>(+84) {e.numberPhone}</td>
+                      <td className='text-data'>{e.displayName}</td>
+                      <td className='text-data'>(+84) {e.numberPhone}</td>
                     </tr>
                     <tr>
                       <th>Payment:</th>
                       <td></td>
                     </tr>
                     <tr>
-                      <td>Total cost:</td>
-                      <td className='text-danger'>${e.totalCost}</td>
+                      <th>Total cost:</th>
+                      <td className='text-data'>${e.totalCost}</td>
                     </tr>
                     <tr>
                       <th>Status:</th>
                     </tr>
                     <tr>
-                      <td className='text-danger '>Unpaid Status</td>
+                      <td className='text-data '>Unpaid Status</td>
                     </tr>
                   </tbody>
                 </Table>

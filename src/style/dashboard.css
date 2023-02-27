@@ -4,16 +4,16 @@
 }
 
 .revenua__box {
-    background: var(--card-bg-01);
+    background: var(--bs-danger);
 }
 .products__box {
-    background: var(--card-bg-02);
+    background: var(--bs-info);
 }
 .order__box {
-    background: var(--card-bg-03);
+    background: var(--bs-green);
 }
 .users__box {
-    background: var(--card-bg-04);
+    background: var(--bs-warning);
 }
 
 .revenua__box h5, .order__box h5, .products__box h5, .users__box h5 {

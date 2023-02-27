@@ -42,6 +42,7 @@ column-gap: 2rem;
 }
 
 
+
 .admin__nav-top-right span i {
     color: whitesmoke;
 }
@@ -77,4 +78,8 @@ column-gap: 2rem;
 .active__admin-menu {
         border-bottom: 2px solid var(--primary-color);
 
+}
+
+.admin__nav-wrapper-top #search__box-admin {
+    height: 50px !important; 
 }

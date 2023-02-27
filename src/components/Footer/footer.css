@@ -1,7 +1,8 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 30px;
-    background: var(--primary-color);
+    background: linear-gradient(rgba(0,0,0, 0.562), rgba(0,0,0, 0.562)), url('../../assets/images/bg__shopcart.png') no-repeat center center;
+    background-size: cover;
 }
 
 .footer__text {

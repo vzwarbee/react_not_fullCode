@@ -68,7 +68,7 @@ const Home = () => {
         <Services />
         <section className="trending__products">
             <Container>
-                <Row>
+                <Row className="all__item">
                     <Col lg='12' className="text-center">
                         <h2 className="section__title">Trending Products</h2>
                     </Col>
@@ -79,7 +79,7 @@ const Home = () => {
 
         <section className="best-sales">
             <Container>
-                <Row>
+                <Row className="all__item">
                     <Col lg='12' className="text-center">
                         <h2 className="section__title">Best Sales</h2>
                     </Col>
@@ -91,7 +91,7 @@ const Home = () => {
 
         <section className="timer__count">
             <Container>
-                <Row>
+                <Row >
                     <Col lg='6' md='12' className="count__down-col">
 
                         <div className="clock__top-content">
@@ -111,7 +111,7 @@ const Home = () => {
 
         <section className="new__arrivals">
             <Container>
-                <Row>
+                <Row className="all__item">
                     <Col lg='12' className="text-center mb-3">
                         <h2 className="section__title">Best Sales</h2>
                     </Col>
@@ -124,7 +124,7 @@ const Home = () => {
 
         <section className="popular__category">
             <Container>
-                <Row>
+                <Row className="all__item">
                     <Col lg='12' className="text-center mb-5">
                         <h2 className="section__title">Popular in Category</h2>
                     </Col>

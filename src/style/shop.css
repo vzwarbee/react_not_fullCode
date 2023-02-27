@@ -1,9 +1,9 @@
 .filter__widget  select{
     padding: 8px 20px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--bs-green);
     cursor: pointer;
     border-radius: 5px;
-    background: var(--primary-color);
+    background: var(--bs-green);
     color: #fff;
 }
 
@@ -20,11 +20,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--bs-green);
     border-radius: 5px;
     padding-right: 12px;
     padding-left: 2px;
     cursor: pointer;
+    overflow: hidden;
+    padding: 5px;
 }
 
 .search__box input {
@@ -32,10 +34,17 @@
     border: none;
     outline: none;
     padding: 8px 10px;
+    background: transparent;
+    color: #fff;
+}
+.search__box input::placeholder {
+    color: var(--bs-green);
+    font-weight: 600;
 }
 
 .search__box span {
     cursor: pointer;
+    color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
